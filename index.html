@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="C:\Users\user\Desktop\f2\calcjs.js"></script>
+</head>
+<body>
+	<h1 style="text-align: center; color: black;">CALCULATOR</h1>
+	
+<div class="calc">
+	<input type="text" class="display">
+	<br>
+	<tr>
+		<td><input type="button" value="C" onclick="c()" class="btn1"></td>
+		<td><input type="button" value="<" onclick="del()"></td>
+		<td><input type="button" value="/" onclick="insert('/')" class="sign"></td>
+		<td><input type="button" value="%" onclick="insert('%')" class="sign"></td>
+	</tr>
+	<br>
+	<tr>
+		<td><input type="button" value="7" onclick="insert('7')" class="num"></td>
+		<td><input type="button" value="8" onclick="insert('8')" class="num"></td>
+		<td><input type="button" value="9" onclick="insert('9')" class="num"></td>
+		<td><input type="button" value="*" onclick="insert('*')" class="sign"></td>
+	</tr>
+	<br>
+		<tr>
+		<td><input type="button" value="6" onclick="insert('6')" class="num"></td>
+		<td><input type="button" value="5" onclick="insert('5')" class="num"></td>
+		<td><input type="button" value="4" onclick="insert('4')" class="num"></td>
+		<td><input type="button" value="+" onclick="insert('+')" class="sign"></td>
+	</tr>
+	<br>
+		<tr>
+		<td><input type="button" value="3" onclick="insert('3')" class="num"></td>
+		<td><input type="button" value="2" onclick="insert('2')" class="num"></td>
+		<td><input type="button" value="1" onclick="insert('1')" class="num"></td>
+		<td><input type="button" value="-" onclick="insert('-')" class="sign"></td>
+	</tr>
+	<br>
+		<tr>
+			<td><input type="button" value="!" onclick="fact('!')" class="f1"></td>
+		<!-- <td><input type="button" value="00" onclick="insert('00')"></td> -->
+		<td><input type="button" value="0" onclick="insert('0')" class="num"></td>
+		<td><input type="button" value="." onclick="insert('.')" class="num"></td>
+		<td><input type="button" value="=" onclick="equal()" class="btn"></td>
+	</tr>
+
+
+</div>
+<!-- .......................social icon start............................ -->
+<div class="icon-bar">
+  <a href="https://www.facebook.com/profile.php?id=100016742110474" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+
+
+
+
+
+<!-- ............................end.................................. -->
+ <script src="http://code.jquery.com/jquery-1.10.2.js"></script>  
+ <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+ <!-- <script type="text/javascript">
+ function insert(num) {
+ 	$('.display').val($('.display').val() + num);
+ }
+ function c()
+ {
+ 	$('.display').val('');
+ }
+ function equal()
+ {
+ 	var x=$('.display').val();
+ 	
+ 	if(x.charAt(0)=='/'){
+ 	$('.display').val('error');}
+ 	if(x.charAt(0)=='%'){
+ 	$('.display').val('error');}
+ 	if(x.charAt(0)=='*'){
+ 	$('.display').val('error');}
+ 	
+     
+     	
+ 	
+ 		// $('.display').val("error")
+ 	
+$('.display').val(eval($('.display').val()))
+
+ }
+ function del()
+ {
+ 	var x=$('.display').val();
+ 	$('.display').val(x.substring(0,x.length-1));
+ }
+ function fact(num)
+ { $('.display').val($('.display').val() + num);
+   var x=$('.display').val();
+   
+    if(x.charAt(0)=='!')
+    	$('.display').val("");
+      else
+      {
+ 	
+ 	 // $('.display').val($('.display').val() + '!');
+
+ 	 var w=$('.display').val();
+        var j=1;
+ 	 for (var i = 1; i <= w; i++) {
+ 	 	 i*=j;
+
+ 	 }
+ 	
+
+ 	  $('.display').val(i);
+ 	}
+	 	 
+ }
+ </script> -->
+</body>
+</html>
